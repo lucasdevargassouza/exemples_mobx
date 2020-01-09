@@ -30,6 +30,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  email_validator:
   mobx_codegen:
   build_runner:
   get_it:

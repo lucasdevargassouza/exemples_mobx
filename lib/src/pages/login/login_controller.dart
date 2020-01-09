@@ -1,4 +1,5 @@
 import 'package:mobx/mobx.dart';
+import 'package:email_validator/email_validator.dart';
 
 part 'login_controller.g.dart';
 
@@ -11,7 +12,7 @@ abstract class LoginControllerBase with Store {
   onChangeEmail(String value) => this.email = value;
   String onValidateEmail() {
     if (this.email.isEmpty) return "Campo obrigatório!";
-    if (!this.email.contains("@")) return "Email inválido!!";
+    if (!EmailValidator.validate(this.email)) return "Email inválido!!";
 
     return null;
   }
