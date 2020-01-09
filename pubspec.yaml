@@ -32,7 +32,7 @@ dev_dependencies:
 
   mobx_codegen:
   build_runner:
-
+  get_it:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
